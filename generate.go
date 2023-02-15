@@ -5,7 +5,7 @@ import (
 	"math/big"
 
 	"github.com/btcsuite/btcutil"
-	"github.com/btcsuite/btcd/btcec"
+	"github.com/btcsuite/btcd"
 	"github.com/btcsuite/btcd/chaincfg"
 )
 
