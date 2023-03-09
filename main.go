@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"math/big"
 
-	go 1.16
+	
 
-require (
+require 
     github.com/btcsuite/btcd v0.21.0-beta
     github.com/btcsuite/btcutil v1.0.2
     github.com/gorilla/mux v1.8.0
