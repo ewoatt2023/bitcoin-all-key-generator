@@ -4,19 +4,14 @@ import (
 	"fmt"
 	"math/big"
 
-	
-
-require 
-    github.com/btcsuite/btcd v0.21.0-beta
-    github.com/btcsuite/btcutil v1.0.2
-    github.com/gorilla/mux v1.8.0
-
-
+	"github.com/btcsuite/btcd/btcec"
+	"github.com/btcsuite/btcutil"
+	"github.com/btcsuite/btcd/chaincfg"
 )
 
 func main() {
 	// Print header
-	fmt.Printf("%64s %34s %34s\n", "Private", "Public", "Public Compressed")
+	fmt.Printf("%64s %34s %34s %34s\n", "Private", "Public", "Public Compressed", "Address")
 
 	// Initialise big numbers with small numbers
 	count, one := big.NewInt(0), big.NewInt(1)
@@ -47,5 +42,6 @@ func main() {
 		fmt.Printf("%x %34s %34s %34s\n", padded, uaddr.EncodeAddress(), caddr.EncodeAddress(), address.EncodeAddress())
 	}
 }
+
 
 
