@@ -4,10 +4,14 @@ import (
 	"fmt"
 	"math/big"
 
-	"github.com/btcsuite/btcd/chaincfg"
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcutil"
-	"github.com/btcsuite/btcd/btcec/v2"
+	go 1.16
+
+require (
+    github.com/btcsuite/btcd v0.21.0-beta
+    github.com/btcsuite/btcutil v1.0.2
+    github.com/gorilla/mux v1.8.0
+
+
 )
 
 func main() {
